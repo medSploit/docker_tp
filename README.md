@@ -1,4 +1,4 @@
-# Docker TP by Mohamed_Oussalh
+# Docker TP by medSploit
 
 This repository contains an automated script for setting up a Docker environment that includes:
 - MySQL
