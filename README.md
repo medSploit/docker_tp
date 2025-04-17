@@ -37,8 +37,8 @@ The script pulls the required Docker images, sets up the containers, creates a M
 3. Run the script:
 
    ```bash
-   chmod +x docker-setup.sh
-   ./docker-setup.sh
+   chmod +x dockertp.sh
+   ./dockertp.sh
    ```
 
 4. Visit the PHP + Apache web page by navigating to (http://localhost:8080/index.php) in your browser.
