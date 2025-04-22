@@ -36,7 +36,7 @@ sudo docker run -d --name apache_container --network my_network \
 
 sudo docker run -d --name ftp_container --network my_network \
     -v /home/ftp -p 21:21 -p 21100-21110:21100-21110 \
-    -e FTP_USER=user -e FTP_PASS=password delfer/alpine-ftp-server || { echo "FTP container failed"; exit 1; }
+    -e USERS="admin|admin" delfer/alpine-ftp-server || { echo "FTP container failed"; exit 1; }
 
 # Setup MySQL database
 echo "Setting up MySQL database..."
@@ -114,4 +114,4 @@ echo "Setup completed successfully!"
 echo "You can now access:"
 echo " - Web application: http://localhost:8080/index.php"
 echo " - MySQL server: localhost:3306 (user: webuser, password: webpassword)"
-echo " - FTP server: localhost:21 (user: user, password: password)"
+echo " - FTP server: localhost:21 (user: admin, password: admin)"
